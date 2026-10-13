@@ -792,7 +792,7 @@ function renderSoal() {
       html += `<label class="opsi-item"><input type="radio" name="opsi" value="${oi}" ${checked}> <span>${escapeHtml(s.opsi[oi])}</span></label>`;
     });
   } else if (s.tipe === 'pgk') {
-    html += `<p style="background:#eff6ff; color:var(--primary); border:1px solid #bfdbfe; padding:8px 12px; border-radius:6px; font-size:14px; font-weight:600; margin-bottom:12px">📌 Soal ini memiliki 3 jawaban benar (wajib Centang 3 jawaban yang menurut kamu benar).</p>`;
+    html += `<p style="background:#eff6ff; color:var(--primary); border:1px solid #bfdbfe; padding:8px 12px; border-radius:6px; font-size:14px; font-weight:600; margin-bottom:12px">📌 Soal ini memiliki 3 jawaban benar (wajib centang 3 jawaban yang menurut kamu benar).</p>`;
     const jawabanArr = Array.isArray(jawaban[soalIdx]) ? jawaban[soalIdx] : [];
     urutanOpsi.forEach(oi => {
       const checked = jawabanArr.includes(oi) ? 'checked' : '';
